@@ -5,24 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="./src/style/style.css">
+  <link rel="stylesheet" type="text/css" href="./src/style/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet"> 
   
   <title>Base Apparel</title>
 </head>
 
 <body>
-  <h1>We're <br>coming <br>soon</h1>
+  <div class="container">
+    <div class="block-content">
+      <img class="logo" src="./images/logo.svg" alt="Base Apparel logo">
 
-  <p>Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <h1 class="title">
+        <span class="light">We're </span>
+        <span class="bold"><br>coming <br>soon</span>
+      </h1>
 
-  <form id="form-email">
-    <input id="input-email" type="email" placeholder="Email Address"></input>
-    
-    <button id="btn-email" type="submit">
-      <img src="./images/icon-arrow.svg" alt="arrow icon">
-    </button>
-  </form>
+      <p class="text">Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <form id="form-email">
+        <input id="input-email" type="email" placeholder="Email Address"></input>
+        
+        <button id="btn-email" type="submit">
+          <img src="./images/icon-arrow.svg" alt="arrow icon">
+        </button>
+      </form>
+    </div>
+
+    <div class="block-image">
+      <img class="img-desktop" src="./images/hero-desktop.jpg" alt="Young woman dressed an orange shirt.">
+
+      <img class="img-mobile" src="./images/hero-mobile.jpg" alt="Young woman dressed an orange shirt.">
+    </div>
+  </div>
 
   <footer>
     <p class="attribution">

@@ -1,4 +1,4 @@
-let inputEmail = document.getElementById("input-email");
+const inputEmail = document.getElementById("input-email");
 const btnEmail = document.getElementById("btn-email");
 const formEmail = document.getElementById("form-email");
 
