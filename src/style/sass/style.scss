@@ -2,46 +2,51 @@
 $mobile: 375px;
 $desktop: 1440px;
 $bg-pattern: url("../../../images/bg-pattern-desktop.svg");
+$radius: 100px;
 
 /* colors */
 $desaturated-red: hsl(0, 36%, 70%);
 $soft-red: hsl(0, 93%, 68%);
 $dark-grayish-red: hsl(0, 6%, 24%);
 $light-linear: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-$meduim-linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$medium-linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 /* typography */
 $family: 'Josefin Sans', sans-serif;
 $text-size: 1em;
-$title-size: calc(3 * #{$text-size});
+$title-size: calc(4 * #{$text-size});
 $light-weight: 300;
 $regular-weight: 400;
 $semibold-weight: 600;
 
 body {
   font-family: $family;
+  color: $dark-grayish-red;
   margin: 0;
 }
 
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-}
-
-.block-content {
+  align-items: center;
   background: $bg-pattern center no-repeat;
   background-size: cover;
-  padding: 50px 0 0 100px;
 }
 
 .logo {
-  width: 7em;
+  width: 9em;
+  margin-bottom: 5em;
+}
+
+.block-content {
+  padding: 0 10em 0 10em;
 }
 
 .title {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: $title-size;
+  margin-bottom: 0;
 }
 
 .light {
@@ -54,9 +59,52 @@ body {
   color: $dark-grayish-red;
 }
 
+.block-email {
+  width: 26em;
+}
+
 .text {
   font-weight: $light-weight;
   color: $desaturated-red;
+  margin: 1em 0 2.5em 0;
+}
+
+.form-email {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-email {
+  padding: 1.3em 2em 1.3em 2em;
+  border-radius: $radius;
+  border: 1px solid $desaturated-red;
+  width: 100%;
+}
+
+::placeholder {
+  color: $desaturated-red;
+}
+
+.btn-email {
+  border-radius: $radius;
+  border-style: none;
+  background-image: $medium-linear;
+  padding: 1.1em;
+  width: 7em;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.btn-email:active {
+  background-image: $light-linear;
+  box-shadow: #ccc 0 0 10px;
+}
+
+.block-image {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .img-mobile {
