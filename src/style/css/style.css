@@ -9,9 +9,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  background: url("../../../images/bg-pattern-desktop.svg") center no-repeat;
+  grid-template-columns: 60% 40%;
+  background: url("../../../images/bg-pattern-desktop.svg") no-repeat center;
   background-size: cover;
+  height: 100vh;
 }
 
 .logo {
@@ -84,12 +85,8 @@ body {
 }
 
 .block-image {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.img-mobile {
-  display: none;
+  background: url("../../../images/hero-desktop.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .footer {

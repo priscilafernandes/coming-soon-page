@@ -2,6 +2,8 @@
 $mobile: 375px;
 $desktop: 1440px;
 $bg-pattern: url("../../../images/bg-pattern-desktop.svg");
+$img-desktop: url("../../../images/hero-desktop.jpg");
+$img-mobile: url("../../../images/hero-mobile.jpg");
 $radius: 100px;
 
 /* colors */
@@ -27,9 +29,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  background: $bg-pattern center no-repeat;
+  grid-template-columns: 60% 40%;
+  background: $bg-pattern no-repeat center;
   background-size: cover;
+  height: 100vh;
 }
 
 .logo {
@@ -101,13 +104,9 @@ body {
   box-shadow: #ccc 0 0 10px;
 }
 
-.block-image {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.img-mobile {
-  display: none;
+.block-image {  
+  background: $img-desktop no-repeat center;
+  background-size: cover;
 }
 
 .footer {
