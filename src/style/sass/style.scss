@@ -28,18 +28,17 @@ body {
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
   background: $bg-pattern center no-repeat;
   background-size: cover;
 }
 
 .logo {
   width: 9em;
-  margin-bottom: 5em;
+  margin: 4em 0 4em 0;
 }
 
 .block-content {
-  padding: 0 10em 0 10em;
+  padding: 0 8em 0 8em;
 }
 
 .title {
@@ -109,6 +108,10 @@ body {
 
 .img-mobile {
   display: none;
+}
+
+.footer {
+  margin-top: 1em;
 }
 
 .attribution { 
