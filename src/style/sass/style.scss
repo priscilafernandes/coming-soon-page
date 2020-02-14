@@ -95,13 +95,25 @@ body {
   padding: 1.1em;
   width: 7em;
   position: absolute;
-  right: 0px;
+  right: 0;
   cursor: pointer;
 }
 
 .btn-email:active {
   background-image: $light-linear;
   box-shadow: #ccc 0 0 10px;
+}
+
+.error-icon {
+  right: 6.5em;
+  position: absolute;
+  align-self: center;
+}
+
+.error-msg {
+  color: $soft-red;
+  font-size: 13px;
+  padding-left: 2em;
 }
 
 .block-image {  
