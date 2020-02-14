@@ -20,6 +20,10 @@ body {
   margin: 4em 0 4em 0;
 }
 
+.block-image-mobile {
+  display: none;
+}
+
 .block-content {
   padding: 0 8em 0 8em;
 }
@@ -46,7 +50,6 @@ body {
 }
 
 .text {
-  font-weight: 300;
   color: #ce9797;
   margin: 1em 0 2.5em 0;
 }
@@ -96,13 +99,13 @@ body {
   padding-left: 2em;
 }
 
-.block-image {
+.block-image-desktop {
   background: url("../../../images/hero-desktop.jpg") no-repeat center;
   background-size: cover;
 }
 
 .footer {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .attribution {
@@ -112,6 +115,49 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo {
+    width: 7em;
+    margin: 2em 0 2em 0;
+    padding-left: 2em;
+  }
+
+  .block-image-mobile {
+    display: block;
+    background: url("../../../images/hero-mobile.jpg") no-repeat center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .block-image-desktop {
+    display: none;
+  }
+
+  .block-content {
+    padding: 0;
+  }
+
+  .title {
+    font-size: calc(3 * 1em);
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

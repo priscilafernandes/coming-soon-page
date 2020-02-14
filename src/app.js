@@ -4,8 +4,8 @@ btnEmail.addEventListener("click", submit);
 function submit() {
   let inputEmail = document.getElementById("input-email").value;
   const validate = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!validate.test(inputEmail)) { // || inputEmail.lenght === 0
+  
+  if (!validate.test(inputEmail)) {
     errorMsg();
   } else {
     alert("Submit!");

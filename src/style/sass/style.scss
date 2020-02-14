@@ -1,6 +1,5 @@
 /* layout */
-$mobile: 375px;
-$desktop: 1440px;
+$screen: 900px;
 $bg-pattern: url("../../../images/bg-pattern-desktop.svg");
 $img-desktop: url("../../../images/hero-desktop.jpg");
 $img-mobile: url("../../../images/hero-mobile.jpg");
@@ -17,6 +16,7 @@ $medium-linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 $family: 'Josefin Sans', sans-serif;
 $text-size: 1em;
 $title-size: calc(4 * #{$text-size});
+$title-size-mobile: calc(3 * #{$text-size});
 $light-weight: 300;
 $regular-weight: 400;
 $semibold-weight: 600;
@@ -38,6 +38,10 @@ body {
 .logo {
   width: 9em;
   margin: 4em 0 4em 0;
+}
+
+.block-image-mobile {
+  display: none;
 }
 
 .block-content {
@@ -66,7 +70,6 @@ body {
 }
 
 .text {
-  font-weight: $light-weight;
   color: $desaturated-red;
   margin: 1em 0 2.5em 0;
 }
@@ -116,13 +119,13 @@ body {
   padding-left: 2em;
 }
 
-.block-image {  
+.block-image-desktop {  
   background: $img-desktop no-repeat center;
   background-size: cover;
 }
 
 .footer {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .attribution { 
@@ -132,4 +135,47 @@ body {
     
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: $screen) {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .logo {
+    width: 7em;
+    margin: 2em 0 2em 0;
+    padding-left: 2em;
+  }
+
+  .block-image-mobile {
+    display: block;
+    background: $img-mobile no-repeat center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .block-image-desktop {
+    display: none;
+  }
+
+  .block-content {
+    padding: 0;
+  }
+  
+  .title {
+    font-size: $title-size-mobile;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 5em;
+  }
 }
